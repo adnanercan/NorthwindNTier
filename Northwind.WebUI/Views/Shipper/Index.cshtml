@@ -1,0 +1,21 @@
+﻿@model IList<Shipper>
+
+    <table class="table table-hover"> 
+
+        <thead>
+        <tr>
+            <th>Firma ismi</th>
+            <th>Telefon numarasi</th>
+        </tr>
+        </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+          <tr>
+              <td>@item.CompanyName</td>
+              <td>@item.Phone</td>
+          </tr>    
+        }
+    </tbody>
+
+    </table>
